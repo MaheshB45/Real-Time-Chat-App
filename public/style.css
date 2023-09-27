@@ -18,7 +18,7 @@ body::-webkit-scrollbar{
 .messages{
     display: flex;
     flex-direction: column;
-    height: 82vh;
+    height: 80vh;
     background-color: #e1e1e1;
     overflow: auto;
 }
@@ -40,13 +40,46 @@ body::-webkit-scrollbar{
 }
 
 .chatroom-header{
-    background-color: black;
+    background-color: #0f0f0f;
     color: white;
     font-size: 2rem;
     padding: 0.5rem;
     text-align: center;
 }
-
+.inp{
+    height: 2.8rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background-color: #55f187;
+}
+.inp img{
+    padding: 0.3rem 1rem 0 1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    transition: transform .2s; /* Animation */
+}
+.inp img:hover{
+    transform: scale(1.5);
+}
+.inp input{
+    padding-left: 1rem;
+    background-color: #55f187;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.inp ::placeholder{
+    font-size: 1.5rem;
+    color: #4f4f4f;
+}
+#message-input{
+    width: 85%;
+}
+#send-button{
+    background-color: #55f187;
+    border: none;
+    cursor: pointer;
+}
 /* align-item */
 /* targets all the elements present in flex container */
 

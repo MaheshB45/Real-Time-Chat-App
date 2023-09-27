@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    
+    <link rel="shortcut icon" href="./messenger.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form-username" id="form" action="">
+        <h1>Join Chatroom</h1>
+        <p>Username</p>
+        <input type="text" placeholder="username" id="username-input" />
+        <button id="join-chat" type="submit">Join Chat</button>
+    </form>
+
+    <div class="chatroom-container">
+        <div class="chatroom-header">
+            <img src="./chat.png" alt="chat">
+            Welcome to Chatroom
+        </div>
+        <div class="messages">
+            <div class="message">Hey hello</div>  <!-- receive -->
+            <!-- <div class="message sent">Hi</div> --><!-- sent -->
+            <!-- <div>username: Hi</div> --><!-- sent -->
+        </div>
+        <div>
+            <div class="inp">
+              <img src="./smiling.png" alt="">
+              <input type="text" placeholder="write message..." id="message-input" />
+            
+              <button id="send-button"><img src="./send-plane.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS link -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.chatroom-container{
+    display: none; /* just for development purpose actually it's display: none */
+}
+
+.form-username{
+    display: block; /* just for development purpose actually it's display: block */
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    height: 82vh;
+    background-color: #e1e1e1;
+    overflow: auto;
+}
+.messages::-webkit-scrollbar{
+    display: none;
+}
+
+.message{
+    background-color: #DCF8C6;
+    width: fit-content;
+    padding: 0.6rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.sent{
+    align-self: flex-end;
+}
+
+.chatroom-header{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* align-item */
+/* targets all the elements present in flex container */
+
+/* align-self */
+/* targets only the required elements */
